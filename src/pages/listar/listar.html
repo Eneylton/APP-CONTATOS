@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Listar Usuarios</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content >
+
+  <ion-fab top right edge>
+    <button ion-fab mini (click)="formadd()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+
+  </ion-fab>
+
+  <ion-list >
+    <ion-item-sliding *ngFor="let loja of lojas" style="margin-top: 20px;">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="../../assets/imgs/tub.png">
+        </ion-thumbnail>
+        <h2>{{loja.nome}}</h2>
+        <h4>{{loja.email}}</h4>
+
+        <button ion-button clear item-end color="dark" (click)="detalheForm(loja.nome,
+                                                                            loja.telefone,
+                                                                            loja.email,
+                                                                            loja.whatsapp,
+                                                                            loja.hinstagram,
+                                                                            loja.facebook,
+                                                                            loja.cep,
+                                                                            loja.endereco,
+                                                                            loja.bairro,
+                                                                            loja.numero,
+                                                                            loja.cidade,
+                                                                            loja.estado,
+                                                                            loja.foto)">
+          <ion-icon style="font-size: 2.2em !important;" name="ios-arrow-forward-outline"></ion-icon>
+        </button>
+
+      </ion-item>
+
+      
+
+    </ion-item-sliding>
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>Suas Informações</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="margin-top: 20px;">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12><span style="font-weight: 600;">Nome:</span> {{nome}}</ion-col>
+    </ion-row>
+  
+    <ion-row>
+      <ion-col col-12><span style="font-weight: 600;">Email:</span> {{email}}</ion-col>
+
+    </ion-row>
+  
+    
+    <ion-item-divider style="margin-top: 20px;" color="light">Redes Sociais</ion-item-divider>
+    <ion-row>
+      <ion-col col-3>
+          <a ion-button outline color="light" href="https://www.instagram.com/{{hinstagram}}/">
+          <img style="width: 25px; height: 25px;" src="../../assets/imgs/04.png">
+          </a>
+      </ion-col>
+
+      <ion-col col-3>
+        <a ion-button outline color="light" href="https://api.whatsapp.com/send?phone=+55{{whatsapp}}">
+          <ion-icon style="color:rgb(48, 177, 22);font-size: 27px;" name="logo-whatsapp"></ion-icon>
+        </a>
+      </ion-col>
+      
+      <ion-col col-3>
+        <a ion-button outline color="light" href="tel:{{telefone}}">
+        <ion-icon style="color:rgb(163, 7, 59);font-size: 27px;" name="call"></ion-icon></a>
+      </ion-col>
+
+      <ion-col col-3>
+        <a ion-button outline color="light" href="https://www.facebook.com/{{facebook}}">
+        <ion-icon style="color:blue;font-size: 33px;" name="logo-facebook"></ion-icon>
+        </a>
+      </ion-col>
+      
+    </ion-row>
+
+    <ion-item-divider color="light">Endereço</ion-item-divider>
+
+    <ion-row>
+      <ion-col col-8>{{endereco}}</ion-col>
+      <ion-col col-4>{{numero}}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-8>{{bairro}}</ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-8>{{cidade}}</ion-col>
+      <ion-col col-4>{{estado}}</ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>

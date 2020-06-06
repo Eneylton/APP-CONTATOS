@@ -1,0 +1,14 @@
+{
+  "name": "app-contatos",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  },
+  "proxies": [
+    {
+      "path": "/php",
+      "proxyUrl": "http://enecrud-com.umbler.net"
+    }
+  ]
+}
